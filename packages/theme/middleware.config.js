@@ -1,7 +1,7 @@
 module.exports = {
   integrations: {
-    <% INTEGRATION %>: {
-      location: '@vue-storefront/<% INTEGRATION %>-api/server',
+    propelvsf: {
+      location: '@vue-storefront/propelvsf-api/server',
       configuration: {}
     }
   }

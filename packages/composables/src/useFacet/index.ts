@@ -10,8 +10,15 @@ import type {
 const factoryParams = {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   search: async (context: Context, params: FacetSearchResult<SearchParams>) => {
-    console.log('Mocked: useFacet.search');
-    return {};
+    console.log('PROPELLER Mocked: useFacet.search');
+
+    const { data } = await context.$propelvsf.api.products();
+
+    console.log('PROPELLER Mocked: useFacet.search data', data);
+
+    return {
+      items: data?.products?.items || []
+    };
   }
 };
 

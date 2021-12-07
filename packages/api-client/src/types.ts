@@ -24,7 +24,15 @@ export type OrderItem = TODO;
 
 export type PasswordResetResult = TODO;
 
-export type Product = TODO;
+export type Product = {
+    _id: number;
+    _name: string;
+    _description: string;
+    id: number;
+    name: string;
+    description: string;
+    
+};
 
 export type ProductFilter = TODO;
 
